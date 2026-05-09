@@ -15,4 +15,9 @@ public partial class MainPage : ContentPage
     {
         Vibration.Default.Vibrate(Duration);
     }
+
+    private void OnCancelClicked(object? sender, EventArgs e)
+    {
+        Vibration.Default.Cancel();
+    }
 }
